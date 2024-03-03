@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://t4.ftcdn.net/jpg/03/57/85/41/360_F_357854155_pZ7ueCQaQ8lBl1ePCaaQ5rRUfKctxr7d.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(160, 99, 99, 0.441);
+
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: rgb(39, 31, 31);
+    bottom: 5%;
+}
+
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.text .image{
+    background-image: url(https://static.wixstatic.com/media/4a5235_68a4a3fd32d046b98f0b8904c64d7e3b~mv2.png/v1/fill/w_924,h_858,al_c,q_90,enc_auto/4a5235_68a4a3fd32d046b98f0b8904c64d7e3b~mv2.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+}
+
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rtext p{
+    font-size:22px;
+}
+
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://wallpapers.com/images/featured/beautiful-nature-pictures-qjcss5r32ziry34t.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+    color: aliceblue;
+}
+
+.b1 p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+}
+
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://www.iucn.org/sites/default/files/styles/what_we_do_large/public/images-themes/biodiversity-shutterstock_1477256246.jpg.webp?itok=4i9JdtFu);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+    color: azure;
+}
+
+.b2 .up p{
+    color: rgb(255, 244, 244);
+    text-align: center;
+    padding: 15%;
+}
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://media.post.rvohealth.io/wp-content/uploads/2019/06/Female_Woods_hike_732x549-thumbnail.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down .overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(255, 255, 255);
+}
+.b2 .down h1{
+    text-align: center;
+    color: white;
+}
+.b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://storage.googleapis.com/twg-content/images/MarketingResources_Thumbnail_Search.width-1200.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vh 3vh;
+
+}
+
+.b3 .overlay p{
+    padding: 1.2vh;
+    
+}
+
+@media(max-width:800px) {
+    .rtext{
+        flex-direction: column;
+
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+    
+}
+
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin: 10px;
+    }
+    .icon{
+        margin-top: 10px;
+    }
+
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+}
